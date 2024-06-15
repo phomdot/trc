@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/827bd2fda3.js" crossorigin="anonymous"></script>
+  <title>The Royal Chronicles</title>
+  <link href='/style.css' rel='stylesheet'>
+  <link rel="icon" href="/images/main_logo.ico">
+  <script type="module" src="app.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  
+  <div id="slideshow_projected">
+    <div class="main_div">
+      <a href="/"><img src="./images/main_logo.png" alt="logo" class="main_logo"></a>
+
+      <nav id="nav_bar">
+        <a href="/" class="active">Home</a>
+        <a href="construction.html" target="_blank">Activities</a>
+        <a href="construction.html" target="_blank">About</a>
+        <button class="menu_button" onclick="menu_bar()"  onmouseover="sideBar()" onmouseleave="sideBarup()"><i class="fa-solid fa-bars"></i></button>
+      </nav>
+    </div>
+
+    <aside id="mySidebar" onmouseover="sideBar()" onmouseleave="sideBarup()">
+      <button onclick="contacts_bar()" onmouseover="contactSubButton()" onmouseleave="contactSubButtonUp()">Contact<i id="arrow_toggle_down" class="fa-solid fa-caret-down"></i> <i id="arrow_toggle_up" class="fa-solid fa-caret-up"></i></button>
+      <div onmouseover="contactSubButton()" onmouseleave="contactSubButtonUp()" id="contact_sub_button_sidebar">
+        <a href="construction.html" target="_blank" rel="noopener noreferrer">Email</a>
+        <hr style="color: black; margin: 0; padding: 0;">
+        <a href="construction.html" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+
+      <button onclick="links_bar()" onmouseover="linksSubButton()" onmouseleave="linksSubButtonUp()">Links<i id="arrow_toggle_down_links" class="fa-solid fa-caret-down"></i> <i id="arrow_toggle_up_links" class="fa-solid fa-caret-up"></i></button>
+      <div onmouseover="linksSubButton()" onmouseleave="linksSubButtonUp()" id="links_sub_button_sidebar">
+        <a href="construction.html" target="_blank" rel="noopener noreferrer">Medium</a>
+        <hr style="color: black; margin: 0; padding: 0;">
+        <a href="construction.html" target="_blank" rel="noopener noreferrer">Chess Club</a>
+      </div>
+    </aside> 
+  </div>
+
+
+
+<!-- Start of slideshows -->
+ <div class="slideshow_container">
+  
+  <div class="slideshow">
+    <img src="/images/img1.png" alt="">
+    <div  onmouseover="slideshow_text_mouseover()" onmouseout ="slideshow_text_mouseout()" class="text_slideshow">
+
+    <p>The Human body is a complex array of systems that works cohesively to bring about operationality. From the initiation of breath to the egress of Carbon Dioxide (CO2) from the body, there are millions of metabolic processes transpiring connoting a myriad of ways somatological dysfunctions could occur.</p> <br><p><a style="color:blue" target="_blank" href="https://medium.com/@abbeyph/organ-system-interconnectivity-part-3-the-cns-055182ab6b86">[Read more and Subscribe...]</a></p>
+    </div>
+  </div>
+
+  <div class="slideshow">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Blood_donation_%28at_a_%22bloodmobile%22%29.JPG?20140926144837" alt="">
+    <div onmouseover="slideshow_text_mouseover()" onmouseout ="slideshow_text_mouseout()" class="text_slideshow">
+      <p>Although a blood transfusion is needed every two seconds in this country, just three percent of the United States population donates blood each year. Your decision to donate blood will save the lives of your friends and neighbors - making it time especially well spent.
+      </p>
+      <br>
+      <p><a style="color:blue" target="_blank" href="https://americasblood.org/for-donors/find-a-blood-center/">[Find a blood center near you]</a></p>
+    </div>
+  </div>
+
+  <div class="slideshow">
+    <h2 style="text-align: center; background-color: transparent">Today in History</h2>
+    <img src="https://cdn.britannica.com/28/144228-050-FB55C473/engraving-King-John-Magna-Carta-Runnymede-England-June-15-1215.jpg?w=725&h=408&c=crop" alt="">
+    <div onmouseover="slideshow_text_mouseover()" onmouseout ="slideshow_text_mouseout()" class="text_slideshow">
+      Magna Carta—a charter of English liberties that occupies a unique place in the popular imagination as a symbol and a battle cry against oppression—was sealed this day, under threat of civil war, by King John in 1215.
+    </div>
+    
+  </div>
+  <!-- End of slideshows -->
+
+  <button onclick="next()" class="next_button"><i class="fa-solid fa-arrow-right"></i></button>
+  <button onclick="previous()" class="prev_button"><i class="fa-solid fa-arrow-left"></i></button>
+<!-- Suggested code may be subject to a license. Learn more: ~LicenseLog:3861063149. -->
+  <div id="dots_div">
+  </div>
+
+  
+
+<div class="buttons_top inside">
+  <div class="motivation_divs one"><a style="background-color: transparent;" target="_blank" href="https://www.brainyquote.com/quotes/thomas_a_edison_149049?src=t_motivational"> 
+    <i style="margin-left: 96%; height: 1.5rem;" class="fa-solid fa-square-up-right"></i>
+    <h2>Daily Quotes</h2>
+    <p>Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time. - Thomas A. Edison</p>
+    </a>
+  </div>
+
+  <div class="motivation_divs two"><a style="background-color: transparent;" href="https://www.bible.com/bible/1/1JN.3.1"> 
+    <i style="margin-left: 96%; height: 1.5rem;" class="fa-solid fa-square-up-right"></i>
+    <h2>Bible Verse</h2>
+    
+    <p>Behold, what manner of love the Father hath bestowed upon us, that we should be called the sons of God: therefore the world knoweth us not, because it knew him not. - 1 John 3:1
+    </p>
+    </a>
+  </div>
+
+  <div class="motivation_divs three"><a target="_blank" style="background-color: transparent;" href="construction.html"> 
+    <i style="margin-left: 96%; height: 1.5rem;" class="fa-solid fa-square-up-right"></i>
+    <h2>#GenCoders</h2>
+    <p>As technology advances, the neccessity to be technologically inclined increaes. Young people should endeavour to keep up with the technological trends so as to improve work output and be competitive in the job market.</p>
+    </a>
+  </div>
+
+</div>
+
+<div class="main_body">
+  <div class="glossy">  
+
+  <div class="motivation_main">
+  <h1 class="hidden">LIFE AND ORDER FROM MICRO TO MACRO <br></BR> BE THE CHANGE | INSPIRE</h1>
+</div>
+
+
+  <hr id="hr_rule">
+
+
+<div class="main_body_div">
+<div class="left">
+  <h2 class="hidden">THE Human Origin Story</h2>
+  <figure class="hidden">
+    <img src="https://static.wixstatic.com/media/ca3797_9e0a9f4848f345ebbf99375d91e97513~mv2.webp" alt="">
+    <figcaption>Figue 1 - Creation</figcaption>
+  </figure>
+  <p class="hidden">
+    Am I created by a higher intelligence or by a random cosmic event? This is the question that tends to draw a divide between many religions and between scientists. There are many theories, beliefs and speculations that have sought to answer this existensial question. There can be parallels found between these explanations, but two things are for sure; our lives had a beginning, pointing to the indisputable fact of an end and within the many explanations of our origin, there exists one which holds the truth.
+  </p>
+  <p class="hidden">The scientific method seeks to answer the How, the What, the When, by and from Who, by Which way, the reason Why, and Where? Scientists when developing a theory have to come up with an undisputable and somehow replicatable answer to these questions. The conventional and well known process after identifying a problem is to do a search on other theories and come up with an initial hypothesis, in simple terms, a superficial theory of what the solution seems to be, or in a more simpler word - a guess. An experiment is then carried out to test this hypothesis. This is a repeating process which continues to build on itself until a presentable answer is found.  </p>
+  <figure class="hidden" style="padding-left: 20%">
+    <img style="width: 80%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/The_Scientific_Method.svg/1024px-The_Scientific_Method.svg.png" alt="">
+    <figcaption>Figue 2 - The Scientific Method</figcaption>
+  </figure>
+
+  <h2 class="hidden">Limitations</h2>
+  <p>Despite being full proof for many scientific problems, there are just some topics that cannot be proven or disproven by the scientific methodbecause they are beyond and above us. One of these topics being the human origin story.</p>
+  <p>Yet, there are currently 4 major scientific theories that attempt in explaining the human origin</p>
+  <br>
+
+  <!-- Quantum Gravity Theories -->
+ <h2 class="hidden">Quantum Gravity Theories</h2>
+ <p class="hidden">
+   <a style="color:blue" target="_blank" href="https://en.wikipedia.org/wiki/String_theory">String Theory &#128279;</a> and <a style="color:blue" target="_blank" href="https://en.wikipedia.org/wiki/Loop_quantum_gravity">Loop Quantum Gravity &#128279;</a>  are grouped into this we call Quantum Gravity Theory. QGT aims to reconcile General Relativity (which simply tries to explain the macro-level structures of the universe) with Quantum Mechanics (simply describing the micro-level structures of the universe)
+ </p>
+<p class="hidden">This theory is itself theoretical as they are still being formulated. These theories lack testable predictions that can be verified with current technology and due to its extreme mathematical complexity, they are hard to work with and can sometimes predict phenomena which are beyond our ability to observer. There is no evidence to this effect. </p>
+<br>
+<br>
+
+  <!-- Big Bang -->
+  <h2 class="hidden">The Big Bang Theory</h2>
+  <p class="hidden">
+    Amongst some in the scientific community, the Big Bang is the most widely accepted explanation for the origin of the universe out of the other three. It posits that the universe began from a singularity - an extremely hot point with unimaginable pressure which had a sudden release of energy.
+  </p>
+  <!-- Evidence -->
+  <div  class="evidence_container hidden">
+  <div class="evidence">
+    <h4>Evidence provided:</h4>
+    <ul>
+      <li>
+        <h5>Cosmic Microwave Background Radiation</h5>
+        <ul style="list-style-type: none">
+          <li>
+            <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Ilc_9yr_moll4096.png" alt="">
+            <figcaption>Figue 1 - Fossil radiation</figcaption>
+          </figure>
+            <p>
+              The above is what is called a fossil radiation. Discovered by Arno Penzias and Robert Wilson in 1965,this is basically the image produced from the most advanced telescope showing the remnants of light from the farthest parts of the universe, which cosmologists can use to get a glimpse into what it looked just 380,000 years after the big bang. Propenents of this theory propose that due to the uniformity of light as seen in the image, the theory of a single-dense point of light is supported.
+            </p>
+          </li>
+        </ul>
+        
+      </li>
+    </ul>
+    
+  </div>
+</div>
+<p class="hidden">Although well presented this evidence is, there are some pitfalls </p>
+
+</div>
+
+<div class="right">
+  
+
+<!-- Evidence Against -->
+<div class="evidence_container hidden">
+  <div class="evidence">
+    <h4>Pitfalls:</h4>
+    
+    <ul>
+      <li>
+        <h5>Singularity Problem</h5>
+        <ul style="list-style-type: none">
+          <li>
+            
+            <p>
+              The big bang proposes a point of infinite density and temperature called the singularity. This is a violation of the laws of physics as we know them and to assume this means that the <mark> proponents of this theory do believe there could exist elements of the cosmos which could break the laws of physics and it is just a matter of discovery.</mark> Many laws of physics have been broken before and continue to be.
+            </p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+
+    <ul>
+      <li>
+        <h5>The Horizon Problem</h5>
+        <ul style="list-style-type: none">
+          <li>
+            <p>
+              The universe today appears to have uniformity in temperature and density in areas that are distant. These areas, if considering just the Big Bang theory and not the Inflation theory, should not have similar temperatures as they would never have been in contact with each other.
+            </p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        <h5>Monopole Problem</h5>
+        <ul style="list-style-type: none">
+          <li>
+            <p>
+              The Big Bang theorizes that there are <a style="color:blue" target="_blank" href="https://en.wikipedia.org/wiki/Magnetic_monopole#:~:text=In%20particle%20physics%2C%20a%20magnetic,or%20south%20%22magnetic%20charge%22.">magnetic monopoles &#128279;</a> (hypothetical particles with a single magnetic pole, imagine magnets with just south poles). But they are just hypothetical as of now and this does remove credibility from the theory.
+            </p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    
+  </div>
+</div>
+
+  <br>
+
+  <!-- Inflation Theory -->
+  <h2 class="hidden">Inflation Theory</h2>
+  <p class="hidden">
+    As a fix to some of the problems that invalidated the Big Bang theory, Alan Guth in 1980 posited the Inflation Theory which states that a second after the Big Bang, the universe started expanding.
+  </p>
+  <!-- Evidence -->
+  <div class="evidence_container hidden">
+  <div class="evidence">
+    <h4>Evidence provided:</h4>
+    <ul>
+      <li>
+        <h5>Hubble's Law</h5>
+        <ul style="list-style-type: none">
+          <li>
+            <figure>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/History_of_the_Universe_%28multilingual%29.svg/825px-History_of_the_Universe_%28multilingual%29.svg.png?20230515164828" alt="">
+              <figcaption>Figue 1 - Expansion of the Universe</figcaption>
+            </figure>
+            <p>
+              Observations by Edwin Hubble in the 1920s showed that galaxies are moving away from us, with more distant galaxies receding faster. This seems suggests that the universe is expanding and that there once was point of origin from which this expansion began.
+            </p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        <h5>Horizon problem Fix</h5>
+        <ul style="list-style-type: none">
+          <li>
+            <p>
+              A constantly expanding universe seems to explain why the there are uniformities in temperature and density between vast distances as they once were in contact before inflation pushed them apart.
+            </p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        <h5>Flatness Fix</h5>
+        <ul style="list-style-type: none">
+          <li>
+            <p>
+              Though not mentioned earlier, the Big Bang did not seem to explain the current scientific observation of the universe, not the earth, having a flat geometry. This is posited by the Inflation theory.
+            </p>
+          </li>
+        </ul>  
+      </li>
+    </ul>
+
+  </ul>
+  
+
+    <ul>
+      <li>
+        <h5>Primordial Fluctuations</h5>
+        <ul style="list-style-type: none">
+          <li>
+            <p>
+              As a new addition to the fixes of the Big Bang theory, this theory posited an explanation for why and how matter came together after the Big Bang to form galaxies, solar systems and planets. <br><br> It posits that there were quantum fluctuations which caused the formation of galaxies.
+            </p>
+          </li>
+        </ul>  
+      </li>
+    </ul>
+    
+  </div>
+</div>
+<p class="hidden">With important fixes to the Big Bang theory, this theory seems infallible, however there is a down side to this </p>
+
+<!-- Evidence Against -->
+<div class="evidence_container hidden">
+  <div class="evidence">
+    <h4>Pitfalls:</h4>
+    
+    <ul>
+      <li>
+        <h5>Lack of Direct Evidence</h5>
+        <ul style="list-style-type: none">
+          <li>
+            
+            <p>
+              The evidence provided by the Cosmic Microwave Background (CMB) is an indirect evidence and is limited by humanity's latest technological level as there is a probability light patterns beyond the current reach of our most advanced telescope do show non-uniformity. Yet if we are to take the CMB as credible, it is an <mark>indirect evidence.</mark> So far there has been no direct evidence to proof the expansion of the universe whether through tests or elemental samples.
+            </p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+
+    <ul>
+      <li>
+        <h5>Fine Tuning</h5>
+        <ul style="list-style-type: none">
+          <li>
+            <p>
+              As with many theories, there are certain conditions and parameters that are initialized. Lets say for example, in measuring the distance from Santa Clarita to San Diego along the Freeway, we must initialize Santa Clarita as the starting point of the freeway, but the question is, what exact point in Santa Clarita are we initializing? Is it from the middle of the city or from boundaries of the city? <br><br> This same issue is apparent in the development of the Inflation theory. Some of the conditions and parameters established as basis of this theory might not have been true at the beginning of time.
+            </p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        <h5>Multiversal Problem</h5>
+        <ul style="list-style-type: none">
+          <li>
+            <p>
+              Some versions of this theory imply the existence of a multiverse, which as of now is science fiction. This does remove credibility.
+            </p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    
+  </div>
+</div>
+
+
+<br>
+<br>
+<!-- Multiverse -->
+ <h2 class="hidden">Multiverse Theory</h2>
+  <p class="hidden">
+    This theory proposes that our universe is just one of many universes, possibly with different physical laws and constants. This theory is a product of the current means to provide evidence of Quantum Gravity Theories.
+  </p>
+<p class="hidden">As with the QGT, this theory remains to be proven as the Multiverse is science fiction. </p>
+
+
+</div>
+</div>
+
+<div class="center">
+  <h2 class="hidden">The Biblical Explanation</h2>
+  
+  <p class="hidden">
+    There are various religions throughout the world that have some sort of origin story. One thing that is valid is that, irrespective of an individual's believe in a God, humanity's beginnings cannot be denied. 
+  </p>
+
+  <p class="hidden">Today, as always have been, there are two main divisions in explaning human orgin - Theistic and Atheistic. I do not believe that the division is between science and not-science. Albert Einstein throughout his life explicitly refused to refer to himself as 'atheistic' but considered himself 'agnostic' and a 'religious nonbeliever'. He did not believe in the existence of a physical God but believed that <b>"there is a lawgiver who sets the laws of the universe".</b> He rejected that there was a conflict between science and religion. He believed that the problem of God was, in his own words, <b>"the most difficult in the world"</b> - a question that could not be answered <b>"simply with a yes or no".</b> He believed this to be a problem greater for our minds to comprehend (To read more on what Einstein believed, <a target="_blank" href="https://en.wikipedia.org/wiki/Religious_and_philosophical_views_of_Albert_Einstein">Click Here</a>) </p>
+<br>
+  <p >
+    <p class="hidden">Einstein, who was considered one of science greatest and more commonly known as the positor of the theory of General Relativity, a back bone to QGT, could not dispute the existence of a God. The reason being, there is no scientific evidence to prove otherwise. The question now is, is there scientific proof to prove the existence of a God? To prove this, we have to start from the beginning - the very beginning. </p>  
+    <br>
+    <img class='large_screen_img hidden'  style="margin-top: 2rem; margin-left: 2rem; height: 20rem;" align='right' src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_UksOBTkyD3JmIHaGHgO5ftFNOM3a8jPlIYQxirN-MfpPYzI7ytORglJiLGtsfBVYMvAod7X7fZcz5nDvxQmy3v2xmDUlwCm076o3waiIEmnHMdAhJDNYhPHDLSVYTjt7cz54zpKyiL8IuJcykc8VFKTIu-6f82nitVxbUWY8kso83BFSYmXhQ73vvA/s400/155001629_234766138388351_4420204706829494557_o.jpg" alt="">
+    <img class='small_screen_img hidden'  style="margin-top: 2rem; margin-left: 2rem; height: 20rem;" align='center' src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_UksOBTkyD3JmIHaGHgO5ftFNOM3a8jPlIYQxirN-MfpPYzI7ytORglJiLGtsfBVYMvAod7X7fZcz5nDvxQmy3v2xmDUlwCm076o3waiIEmnHMdAhJDNYhPHDLSVYTjt7cz54zpKyiL8IuJcykc8VFKTIu-6f82nitVxbUWY8kso83BFSYmXhQ73vvA/s400/155001629_234766138388351_4420204706829494557_o.jpg" alt="">
+    <br>
+    <h3 class="hidden" style="background-color: transparent;">Can the laws of Physics be violated?</h3>
+    <p class="hidden">In Christianity, the bible offers explanation for human origin. A divine Being capable of matter manipulation at the subatomic level and creation of matter from nothingness. Interestingly enough, there is scale called the Kardashev scale which seems to define the existence of such a Being. This Being on Type VI of the Kardasheve scale is capable of creating and manipulating the multiverse, and is beyond time and space. This being for one, tends to be able to break all the laws of physics and this might initially seem to present a scientific loophole in this explanation. But if we are to consider the basis of Evolution, which is a direct child of the Big Bang, we did specify previously that proponents of the Big Bang in their explanations of the origin of the universe did make it clear that for the Big Bang to exist, a single particle of dense energy which defies the laws of Physics must be the origin of the universe. Therefore, scientifically, the Big Bang theory and all other theories evolving from it does provide the support that if there exists cosmic elements capable of violating laws of Physics, there can exist a non-coporal being capable of the same.
+      </p>
+    <br>
+    
+    <br>
+    <h3 class="hidden" style="background-color: transparent;">Existence of Infinitely Existing Matter? </h3>
+    <p>
+      <p class="hidden">
+      Christianity also explains the infinite existence of a God. Can this be proven? 
+      <br>
+      How can you know if something doesn't exist? In a search for your lost keys, you arrive at a possible location - a friend's house you have been to in the day, how can you ascertain that the keys do not exist in that location? Through thorough searching then concluding non-existence.
+      <br>
+      How do you know something exists? Scientifically, until proven otherwise, it is 100% safe to assume without searching that your keys indeed does exist somewhere.
+      <br>
+      Therefore it is not a flaw in the Christian logic to say that there exists a God. But in order to disprove this, oen must have indeed searched the whole known universe and beyond and come up with a conclusion that there exists no God.
+      </p>
+      <br>
+      
+      <br>
+      <p class="hidden">
+      Again, the Big Bang Theory comes to the self-implicating aid of the Christian explanation to the existence of God. An assumption of the Big Bang or any other theory that exists of human origin is that there must always be something that has no beginning. For instance where did the energy from the Big Bang Singularity come from? Was it formed from something else or not? Assuming it wasn't created violates the Laws of Science (Law of Conservation of Mass) which says matter can't be created and also adds credibility to the Christian logic that there exists a non-created God. Also, assuming that it was formed causes another cycle of what created it and infinitely it goes on.
+      </p>
+      <br>
+      <img class='small_screen_img hidden'  style="margin-top: 2rem; margin-left: 2rem; height: 20rem;" align='center' src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3674cefc-f68e-422a-ac13-004d781a18af/depmqsv-b0cd1c60-30e3-4433-9f29-ce495e6d1310.jpg/v1/fill/w_1280,h_872,q_75,strp/celestial_loom_by_julian_faylona_depmqsv-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM2NzRjZWZjLWY2OGUtNDIyYS1hYzEzLTAwNGQ3ODFhMThhZlwvZGVwbXFzdi1iMGNkMWM2MC0zMGUzLTQ0MzMtOWYyOS1jZTQ5NWU2ZDEzMTAuanBnIiwiaGVpZ2h0IjoiPD04NzIiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8zNjc0Y2VmYy1mNjhlLTQyMmEtYWMxMy0wMDRkNzgxYTE4YWZcL2p1bGlhbi1mYXlsb25hLTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.eD52LWGeH5Azgqp4KpXFX2LoSgtRqUxJJSfGixfbIes" alt="">
+      <img class='large_screen_img hidden'  style="margin-top: 2rem; margin-right: 2rem; height: 20rem;" align='left' src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3674cefc-f68e-422a-ac13-004d781a18af/depmqsv-b0cd1c60-30e3-4433-9f29-ce495e6d1310.jpg/v1/fill/w_1280,h_872,q_75,strp/celestial_loom_by_julian_faylona_depmqsv-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM2NzRjZWZjLWY2OGUtNDIyYS1hYzEzLTAwNGQ3ODFhMThhZlwvZGVwbXFzdi1iMGNkMWM2MC0zMGUzLTQ0MzMtOWYyOS1jZTQ5NWU2ZDEzMTAuanBnIiwiaGVpZ2h0IjoiPD04NzIiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8zNjc0Y2VmYy1mNjhlLTQyMmEtYWMxMy0wMDRkNzgxYTE4YWZcL2p1bGlhbi1mYXlsb25hLTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.eD52LWGeH5Azgqp4KpXFX2LoSgtRqUxJJSfGixfbIes" alt="">
+      <br>
+      <h3 class="hidden" style="background-color: transparent;">Existence Out of Space and Time?</h3>
+      <p class="hidden">
+        To give an explanation to a Physics defying God, Christianity posits that God exists out of space and time so He is not bound by the rules of what is created. Can this be proven?</p>
+        <br>
+        <br>
+        <p class="hidden">
+        Something more obvious and undeniable is the fact that the creator is not bound by the creation. An example is our human inventions - humans are not bound by codes and 'if' statements because we are the creators not the creation. So if indeed the last two points are convincing, then indeed this God cannot be bound by the laws of Physics or any observable and non-observable laws of the universe.</p>
+        <br>
+        <br>
+
+        <h3 class="hidden" style="background-color: transparent;">Direct Evidences of Existence</h3>
+        
+        <p class="hidden">
+        I trust that, whether it be science or religion there is always an argument which cannot be proven just because it is beyond our abilities and is left to 'believing'. In religion, this 'believing' is called having faith. In Christianity, it is to have 'faith', faith that there exists a God and His Son, Jesus Christ came to this earth to die for the sins of the world and rise again on the third day into glory. For Science, it is to have a 'theory', a theory that for all time, there has always existed matter in one form or the other and theorizing otherwise breaks science.</p>
+    </p>
+   
+  </p>
+</div>
+
+<hr>
+<!-- main body under image -->
+<div class="stories_container inside">
+<!-- div 1 -->
+<a class="class_links" target="_blank" href="https://www.bbc.com/news/articles/cllldqyg19ro">
+  <div class="stories hidden">
+
+    <div class="text_shadow top">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAAG1BMVEX////7+/sAAAAjIyMYGBh0dHQ4ODgfHx9paWmS+I2mAAAAMUlEQVR4AWMYGoBR2diVrdg8IcTYSADEVVLSYFdSKmhSUoJxmZWUDDC56IrRjRoSAAAbNQxbcFxT3gAAAABJRU5ErkJggg==" alt="" class="news_img">
+      <h4 class="news_text">BBC World News</h4>
+      <p class="news_text txt">
+        Get all the latest news, live updates and content about the World from across the BBC.
+      </p>
+    </div>
+
+    <img class="main_img" src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/78ca/live/0927c370-2a17-11ef-a1fa-1b739acc6f54.jpg.webp" alt="">
+
+    <div class="text_shadow bottom">
+      <h4 ><i class="fa-solid fa-sort-up"></i> <br> G7 agrees $50bn loan for Ukraine from Russian assets</h4>
+      <div style="height: 100%; background: transparent;">
+        <div class="bottom_text_scrollable">
+          <p>The G7 has agreed to use frozen Russian assets to raise $50bn (£39bn) for Ukraine to help it fight invading Russian forces.</p>
+          <br>
+          <p>
+        The funds will help Ukraine to fight invading Russian forces, a move Moscow condemns. 
+      </p>
+      <p>Read More...</p>
+      
+    </div>
+    </div>
+    </div>
+    </div>
+  </a>
+
+  <!-- div 2 -->
+  <a class="class_links" target="_blank" href="https://edition.cnn.com/2024/06/14/middleeast/hezbollah-lebanon-israel-tensions-explainer-update-intl/index.html">
+    <div class="stories hidden">
+  
+      <div class="text_shadow top">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAM1BMVEXMAADMAADKAADTNTXYUFDPGhr44OD////zzs7+9/ffdXXuurrqqqrjiIjmmJj78PDMAACCcz1lAAAAEXRSTlP/9f//////////////////9/LHRPEAAAC5SURBVHgBYsADGIekJIAI8sCCGASBaN5IGMCA97/tsqnS+XYA7a70rS8IDJEdrV38/S5j4IIYSlKsDZvSB8LncUEIZ1YNSnrncihivXAdRjNhTi1h1YoXomvfgZ3JYBdM/2CZFbYT2tSG01RfqDYvqCvIMg++cDAY2zYaihdrph7fhUyT7mwILS3DSr1hD/WsqlTDYOiEMFbdEEhdPXQAsXTv2u37WwCnf7OW34ZeMsEDBBgEcAJGRgCt3wmNVFZFwgAAAABJRU5ErkJggg==" alt="" class="news_img">
+        <h4 class="news_text">Cable News Network</h4>
+        <p class="news_text txt">
+          View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com.
+        </p>
+      </div>
+  
+      <img class="main_img" src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2154622899.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp" alt="">
+  
+      <div class="text_shadow bottom">
+        <h4 ><i class="fa-solid fa-sort-up"></i> <br> Hamas official says `no one has any idea` how many Israeli hostages are still alive</h4>
+        <div style="height: 100%; background: transparent;">
+          <div class="bottom_text_scrollable">
+        <p>
+          Hamas official tells CNN why it hasn`t accepted ceasefire plan that was approved by the UN Security Council
+        </p>
+
+        <p>Read More...</p>
+      </div>
+      </div>
+      </div>
+      </div>
+    </a>
+
+  <!-- div 3 -->
+  <a class="class_links" target="_blank" href="https://www.foxnews.com/politics/secret-service-brief-congress-clash-between-agents-protecting-vp-harris">
+    <div class="stories hidden">
+  
+      <div class="text_shadow top">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAk1BMVEUAM2YAJl+Dl67////U2+MAIl1ddZUALGIAMWUAH12sucgAOWyls8QeRnNXc5RhgKDm6/D4+vxObI+Mobfy9PdBY4kAKmEANWm9yNQAFVfCztprgZ49W4IqTXgAL2RRb5EAJF4UP28AKWF0j6sAGlpthaEmS3fu8fWcq70AA1M4XYTb4uiXp7oADVaZDyzFABTCABeV82iNAAABw0lEQVR4AVRO2aKqIBQFFyoiGiSRI5GmcNPz/7937Tx19jzvRU6iCcBSmgHIcvJNPM8LASQlZ4AsyB+q6kutoK/XBjA3kvPvZl3Zu0bbpT0wjJfL5L7aOc+vwFCcRhTOlo/L9P2XJjB330M96VmebV1z60hufy+k7Xn1ZpYlyx5unh7T8zGM6XWYPt1ZIXu1RgAw5ceKFaYGtrPJKwQ6Qkmw2EiESUG00EjSc9HWEP8E1og+qRVUyqDfBrv/XPUHrhvYjwTQBijKgLcC8794+tBJjC+JdrkxqHnHLgEkn+5sZAlZpBJH5x/nPegGeoWuHHEbxhju3C79SjkdJRO3pV1+mn7NiR3CLLKU3x3lZVnefWEdnWc+PouapCIuR5A/gskQTNwl36NTK4NOalKw9x6BdxtaSJmx/QZ20wKrEOdPlsQDYK0SuklcNA1Usx/Y45aTMfZFRIRWAmGfBqjeqNYLg5CT9cheERODak1VusngErCuR9mjIkvifcRWn01oLV87NobpgMFOyVFyO4jKNnERQqxFIt0iS7uK4+nINSck95zP1HrvLZkpt5SQ2VNOiLv/H27AoIcHMOjjAQwGeABeSQC54j5920mVwwAAAABJRU5ErkJggg==" alt="" class="news_img">
+        <h4 class="news_text">Fox News</h4>
+        <p class="news_text txt">
+          Get breaking news, must see videos & exclusive interviews from the #1 name in news.
+        </p>
+        
+      </div>
+  
+      <img class="main_img"  src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2024/02/720/405/Kamala-Harris.jpg?tl=1&ve" alt="">
+  
+      <div class="text_shadow bottom">
+        <h4 ><i class="fa-solid fa-sort-up"></i> <br> Secret Service agents to testify before Congress after Kamala Harris` detail struck superior</h4>
+        <div style="height: 100%; background: transparent;">
+          <div class="bottom_text_scrollable">
+        <p>
+          A Secret Service agent on Vice President Kamala Harris' detail was led away in handcuffs after punching a supervisor during an April altercation at an airbase.
+        </p>
+
+
+        <p>Read More...</p>
+      </div>
+      </div>
+      </div>
+      </div>
+    </a>
+
+  <!-- div 4 -->
+  <a class="class_links" target="_blank" href="https://www.msnbc.com/rachel-maddow-show/maddowblog/manhattan-da-bragg-closing-slides-trump-rcna157057">
+    <div class="stories hidden">
+  
+      <div class="text_shadow top">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAA7VBMVEVHcEyKhXP1MS35OyJTZOJaZ97yETzvFEHvFUHvFUBwUdtuVdxuVdxtUd/xCzzxCjryBjlnVuFoVd/vFUBuVdwZhvT/cw//cRH/cRHuD0JuVNwFneAEneACn+D/cRL/cRLtCkN+PNsDnuAFneACoOD/Yg/vE0FvU9wGm+v/cRP/bxH/aQ9wU9wDnuL8zBH8zBL8zxL8yxD/chHvFEEGm+4FqHIErTUFrD8Fqz78zBL8zRL70xH/dAsAouAErSQFrD8Eqz/8zBL8zhJzS9wGm+wGrkAFrDoFrD8FrD37vxHIkiv7zhEErDn6yhH5yRES7BUqAAAAT3RSTlMABR0TESFC7P+Rhf/uR1ElfW8pbt0Xk/axr7y59JVZ/zQxrv9lKc7RMCjTc6TTUrGeLOH/dTGUq0f//nZLQ3L/X+TQMH4fxeT6LguCgxYf/ftd6AAAARFJREFUeAHM0FOWBFEQRdGbfmXbtm0b8x9OR2S7ewK1f896iMDrkmQFRNUk/KMbQlgAq81md/w7ZwjidNiI/e9Zl2Buj91O1YsfFAWKYD54/RRVBNTPFgyFwlKEox6wkagUi8cTMCVTJJzm6PJyzGRzJA8WTrFCUQhDUenJUjnHYj9i0ClEEaAnHQkzZsEqZgzJBseoza7FzViGSa5yrbl5CXWbNc+pEQBrttqdGsWu3PMBHpvWoNYfDEdjapPpZDIr0OF5xAk46gs6Vl6uyBqbCdvS4aorDewyjdz+cFyxE6iwKR2egyzo2JkKQ4sT214KIOUBHzMdcd1OPt0kQLqvvtoVwOP56Urx8OVtgzBBAgAlgDNgTla6EAAAAABJRU5ErkJggg==" alt="" class="news_img">
+        <h4 class="news_text">MSNBC</h4>
+        <p class="news_text txt">
+          MSNBC  is the premier destination for in-depth analysis of daily headlines, insightful political commentary and informed perspectives.
+        </p>
+      </div>
+  
+      <img class="main_img"  src="https://media-cldnry.s-nbcnews.com/image/upload/t_focal-1000x500,f_auto,q_auto:best/rockcms/2024-03/240321-jim-jordan-ac-703p-eeea82.jpg" alt="">
+  
+      <div class="text_shadow bottom">
+        <h4 ><i class="fa-solid fa-sort-up"></i> <br>The 400 Trump trial evidence slides that should shut up Jim Jordan</h4>
+        <div style="height: 100%; background: transparent;">
+          <div class="bottom_text_scrollable">
+        <p>
+          The 400-plus slides highlight and connect trial testimony, texts, emails, phone call data and business records, painting a damning picture of Trump's crime.
+        </p>
+
+        <p>Read More...</p>
+      </div>
+      </div>
+      </div>
+      </div>
+    </a>
+  <!-- div 5 -->
+  <a class="class_links" target="_blank" href="https://www.who.int/news/item/13-06-2024-gavi-to-boost-access-to-life-saving-rabies-vaccines-human-in-over-50-countries-gavi-who-and-uar">
+    <div class="stories hidden">
+  
+      <div class="text_shadow top" style="height: 4.8em">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAAJ1BMVEVHcEwPkM8RkM8Kj88Lj88bktAZkdADjs4lldIgk9ELj88WkdAYkdCg0L3jAAAADXRSTlMAn4jQtUJU/RYt6HtplEFUjwAAAT9JREFUeAGNwYNyWFEABcBTPLUd1G5j27Z5Y9u2bdu2bdv4p1jDZBcv8YoHT73RwQMCRxvBAFC4wWQ3IocPIVQ3rlDqdHVejEBCC/lCAISfNTjq10zrJoRIiALsHxWyIpQbLKdA560Brz810tT2h+9jdjwu5tN4Y99I0wWpX49Fth2FdPB2toR475nvy7UXE3MeOGoQ4hCj/j0pkCoJDUZdnYPguoLubFKYbfBwN979qSaJzuJHXxqo5hkdBIzXGsSUcWJGzcTBLwRMfflRakMoryzxDhDsBh3vUjKkU7MUJ1jS+L0atOuC9yHlvhvnTp+PECB9J7fEmy6OL542XAVQ2v9jmwp3rC6sHZIBQDfa0cEcCklKCAHADhlXsw4O2XRfHK5xgbtqegL9EoHVuMbO9a0EF9aqaeDee2Aaz7sEP6hhialGLTsAAAAASUVORK5CYII=" alt="" class="news_img">
+        <h4 class="news_text">World Health Organization</h4>
+        <p class="news_text txt">
+          Dedicated to the well-being of all people and guided by science, the World Health Organization leads and champions global efforts to give everyone, everywhere an equal chance to live a healthy life. 
+        </p>
+      </div>
+  
+      <img class="main_img"  src="https://www.who.int/images/default-source/departments/ntd-library/rabies/cambodia-2023/rabies-elimination-in-cambodia-5.tmb-479v.png?Culture=en&sfvrsn=b8693fdf_1" alt="">
+  
+      <div class="text_shadow bottom">
+        <h4 ><i class="fa-solid fa-sort-up"></i> <br>Gavi to boost access to life-saving human rabies vaccines in over 50 countries: Gavi, WHO and UAR</h4>
+        <div style="height: 100%; background: transparent;">
+          <div class="bottom_text_scrollable">
+        <p>
+          Gavi, the Vaccine Alliance, in collaboration with partners, is announcing support for human rabies vaccines for post exposure prophylaxis (PEP) as part of routine immunisation. Eligible countries are receiving guidance on how to access these vaccines under Gavi`s cofinancing policy. The first round of applications will be accepted by mid- July 2024. Ninety-five percent of human rabies deaths occur in Africa and Asia, most often in marginalised communities that lack access to care.
+        </p>
+
+        <p>Read More...</p>
+      </div>
+      </div>
+      </div>
+      </div>
+    </a>
+  <!-- div 6 -->
+  <a class="class_links" target="_blank" href="https://www.sciencedaily.com/releases/2024/06/240604184208.htm">
+    <div class="stories hidden">
+  
+      <div class="text_shadow top">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAw1BMVEX////l5ezMzNe1tMNqaY0WE1oAAEwAAE7FxNL7+/zW1uBTUn0JBVITEFUAAFBAPnCXl60QDVRBP3WjorqPjqt+fZ4iIGLp6e46OG7x8fVNTHuGhqEnJV749vXVxsNhFQBoKxZnJgx4QjGrjobl3dwaGFgHAFZ5eJpQAAByQjWGYFd5Sz9YBABuOCnLurbaz8y2n5m+q6anprcyMGnu6eeCVUm1tcqslZBubZVMAADRxsSTkqtubY9bCwCZd25jHwBrMB2/I9UUAAABN0lEQVR4AaXQgxbDMAAF0NRKUmu2ba///1WrfbhXJjcGf4YgKYok6o2kGZZjaF6oMVGCCGOEZbFqggJVTTc0FZvVrgQNLdsf21EttzpqA0p+F7fZYlzQDiNkKKkM6fpKEKDT7fX7/cFwlLBr4vFkSom+g85svlgslqv1JlHeUcdwIjf9rXRWw9FotN315ttkuZTMoTHCDuXjLqzar4btRO2DzMGxenQTPJ2Xo9xmiSkcc5dtjO1rNxqXvN3Cozmo2EgQbO6PaD0sqwdfqpXDx2wT9Wypwam6T4a9VNB+YSgdDs0jYuxOho90nwhDiLACUtwkKPAyizE7VtwU29f+Nt0I+XxebABSPC3PI1BOgvvZtV2D1/bpdNq/w7Ot4PLz+Sxn6z2oZvv1er3e/NMRarC9DXMCf+YHhcAk33vE8SgAAAAASUVORK5CYII=" alt="" class="news_img">
+        <h4 class="news_text">Science Daily</h4>
+        <p class="news_text txt">
+          Your source for the latest research news. 
+        </p>
+      </div>
+  
+      <img class="main_img"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Internet_addiction.jpg/1200px-Internet_addiction.jpg?20130831012523" alt="">
+  
+      <div class="text_shadow bottom">
+        <h4 ><i class="fa-solid fa-sort-up"></i> <br>Internet addiction affects the behavior and development of adolescents</h4>
+        <div style="height: 100%; background: transparent;">
+          <div class="bottom_text_scrollable">
+        <p>
+          Adolescents with an internet addiction undergo changes in the brain that could lead to additional addictive behavior and tendencies, finds a new study.
+        </p>
+
+        <p>Read More...</p>
+      </div>
+      </div>
+      </div>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- footer-->
+  
+<footer id="footer">
+   <!-- Left footer -->
+   <div class="footer_div footer_left">
+    <h4 class="footer_header">&#129520; ACTIVITY</h4>
+    <hr class="footer_rule" style="border-color: lightcoral;">
+    <div class="footer_body footer_body_left">
+      <ul>
+        <li><a href="construction.html">LATEST BLOG POST</a></li>
+        <li><a href="construction.html">TRAVEL EXPERIENCES</a></li>
+      </ul>
+    </div>
+    <div class="footer_body footer_body_right">
+      <ul>
+        <li><a href="construction.html">THE MEDICAL PATH</a></li>
+        <li><a href="construction.html">INTERNSHIPS AND EXTRACURRICULARS</a></li>
+        
+      </ul>
+    </div>
+  </div>
+  
+
+   <!-- Footer center -->
+   <div class="footer_div footer_center">
+    <h4 class="footer_header">&#128214; STEWARDSHIP</h4>
+    <hr class="footer_rule" style="border-color: lightblue;">
+    <div class="footer_body footer_body_left">
+      <ul>
+        <li><a  href="https://btohome.org/">BRIDGE TO HOME</a></li>
+        <li><a href="https://www.childrenshungerfund.org/">CHILDREN'S HUNGER FUND</a></li>
+      </ul>
+    </div>
+    <div class="footer_body footer_body_right">
+      <ul>
+        <li><a href="https://www.amazingfacts.org/donate-online?utm_source=dml">AMAZING FACTS BIBLE LESSONS</a></li>
+        <li><a href="https://worldorphans.org/">WORLD ORPHANS</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- footer right -->
+  <div class="footer_div footer_right">
+    <h4 class="footer_header">&#128395 TOOLS</h4>
+    <hr class="footer_rule">
+    <div class="footer_body footer_body_left">
+      <ul>
+        <li><a href="construction.html">sGPA & cGPA CALCULATOR</a></li>
+        <li><a target="_blank" href="https://www.prospectivedoctor.com/medical-school-secondary-essay-prompts-database/">MED SCHOOL LATEST SECONDARY ESSAY DATABASE </a></li>
+      </ul>
+    </div>
+    <div class="footer_body footer_body_right">
+      <ul>
+        <li><a href="construction.html">MEDICAL SCHOOL ACCEPTANCE CHANCE CALCULATOR[!]</a></li>
+        <li><a href="construction.html">IVY LEAGUE REQUIREMENTS</a></li>
+        
+      </ul>
+    </div>
+  </div>
+  <hr class="footer_hr">
+  
+<div class="bottom_footer_container">
+  
+  <div class="footer_div footer_bottom_left">
+    <a href="/"><div class="bottom_logo_div"></div></a>
+    <div class="bottom_logo_text"><h1><a href="/">The Royal Chronicles</a></h1> 
+      
+    </div>
+    <div class="bottom_reserved"><p style="font-size: 80%;">Built by Prince Henry Abbey | &#169; The Royal Chronicles</p></div>
+    
+  </div>
+
+  <div class="footer_div footer_bottom_right">
+    <div class="bottom_right_texts" id="associations">
+      <a href="https://www.masters.edu/admissions-aid/" target="_blank" rel="noopener noreferrer"><img style="background-color: rgba(245, 245, 245, 0.509)" src="https://masters.edu/wp-content/uploads/2021/11/MastersU_Seal--300x300.png" alt=""></a>
+      <a href="https://lifeatcrossroads.org/" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAARVBMVEVHcEz////////////////////////////n9NvR6brG46r////d78yh0nF0vhtqugD////y+eqPylJxvRC43ZRuvAR9wi3FUG5/AAAAEXRSTlMATpLP9f8apP///9//////KDSsXEEAAAE+SURBVHgBhVMJEsMgCMxlqjRKPcj/n1qkQZNOp9m5VK5dhOGEcZoXY5Z5GocfWB/mhMf6bZ/k3ToAZ+U4XcOf/LT5gILgN74+T0leXDomzOFAxmSZzKvFs92pWV2APTQH5y8YvoCFqzR+DjWwgrJ4wMF05fr4MZN3MUYLSe7IPGoR1p8khFI0Bzaq/on7wQ58RbF7NesLslrurzFeEuymw5OGjJViUE7SLc8HFVtpzsZ+KgiBwhJwL5JAaM7Dwhq1gsoh7YUzC3MEFMqdnEDLXh3s1YHYoZUIwnGn+n4poSRRSMZEmL09kewyixHE6phyl9kaRdY0AIldGtVanffYHCL1VvfPygRqlwf9rLWrQ/IFoMjw9e+uNEH1Z5J56QNzP3I6tPBvaGXs7Z+xb4uTmQCTyH1x7lfvfnlv1/8NgPUjvipZrCwAAAAASUVORK5CYII=" alt=""></a>
+      
+    </div>
+    <div class="bottom_right_texts" id="social_medias">
+      <a href="https://www.linkedin.com/in/princlo/" target="_blank" rel="noopener noreferrer"><img src="https://www.freeiconspng.com/uploads/displaying-19-gallery-images-for-linkedin-logo-png-25.png" alt="Linkedin logo"></a>
+      <a href="https://www.instagram.com/phno.m/" target="_blank" rel="noopener noreferrer"><img src="https://www.transparentpng.com/thumb/logo-instagram/eerDTf-logo-instagram-clipart-transparent.png" alt="logo instagram clipart transparent"></a>
+      <a href="https://medium.com/@abbeyph" target="_blank" rel="noopener noreferrer"><img src="/images/medium.png" alt="logo medium clipart transparent"></a>
+    </div>
+    <div class="bottom_right_texts" id="utility"> <p><a href="construction.html">WEBSITE FEEDBACK</a> | <a href="construction.html">REQUEST PRIVATE PHONE LINE</a> | <a href="construction.html">OFFERING ME RESEARCH OPPORTUNITIES</a></p>
+    </div>
+    
+  </div>
+  </div>
+
+</footer>
+
+
+</div>
+</div>
+</body>
+</html>
