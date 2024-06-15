@@ -1,4 +1,17 @@
 // Add JS here
+var x = document.getElementById("menu_button");
+var y = document.getElementById("contact_button");
+var z = document.getElementById("links_button");
+
+x.addEventListener("click", menu_bar);
+
+
+y.addEventListener("click", contacts_bar);
+
+
+z.addEventListener("click", links_bar);
+
+
 function sideBar() {
   var x = document.getElementById("mySidebar");
     x.style.display = 'flex';
