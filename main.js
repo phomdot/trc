@@ -5,45 +5,25 @@ var z = document.getElementById("links_button");
 
 x.addEventListener("click", menu_bar);
 
-
 y.addEventListener("click", contacts_bar);
-
 
 z.addEventListener("click", links_bar);
 
+window.addEventListener("click", sideBarup);
+window.addEventListener("click", contactSubButtonUp);
+window.addEventListener("click", linksSubButtonUp);
 
-function sideBar() {
-  var x = document.getElementById("mySidebar");
-    x.style.display = 'flex';
-  
-}
 
 function menu_bar() {
-var x = document.getElementById("mySidebar");
-if (x.style.display == 'flex') {
-    x.style.display = 'none';
-  }
-  else {
-    x.style.display = 'flex';
-  }
-}
-
-function sideBarup() {
   var x = document.getElementById("mySidebar");
-    x.style.display = 'none';
+  if (x.style.display == 'flex') {
+      x.style.display = 'none';
+    }
+    else {
+      x.style.display = 'flex';
+    }
+  }
   
-}
-
-function contactSubButton() {
-  var y = document.getElementById("contact_sub_button_sidebar");
-  y.style.display = 'flex';
-  var z = document.getElementById("arrow_toggle_down")
-  z.style.display = 'inline';
-  var a = document.getElementById("arrow_toggle_up")
-  a.style.display = 'none';
-  
-}
-
 function contacts_bar() {
 var y = document.getElementById("contact_sub_button_sidebar");
 
@@ -62,6 +42,48 @@ else {
   a.style.display = 'none';
 }
 }
+
+function links_bar() {
+var y = document.getElementById("links_sub_button_sidebar");
+var z = document.getElementById("arrow_toggle_down_links");
+var a = document.getElementById("arrow_toggle_up_links");
+if (y.style.display == 'flex') {
+  y.style.display = 'none';
+  z.style.display = 'none';
+  a.style.display = 'inline';
+}
+else {
+  y.style.display = 'flex';
+  z.style.display = 'inline';
+  a.style.display = 'none';
+}
+
+}
+
+function sideBar() {
+  var x = document.getElementById("mySidebar");
+    x.style.display = 'flex';
+  
+}
+
+
+function sideBarup() {
+  var x = document.getElementById("mySidebar");
+    x.style.display = 'none';
+  
+}
+
+function contactSubButton() {
+  var y = document.getElementById("contact_sub_button_sidebar");
+  y.style.display = 'flex';
+  var z = document.getElementById("arrow_toggle_down")
+  z.style.display = 'inline';
+  var a = document.getElementById("arrow_toggle_up")
+  a.style.display = 'none';
+  
+}
+
+
 
 function contactSubButtonUp() {
   var y = document.getElementById("contact_sub_button_sidebar");
@@ -82,22 +104,7 @@ function linksSubButton() {
   
 }
 
-function links_bar() {
-var y = document.getElementById("links_sub_button_sidebar");
-var z = document.getElementById("arrow_toggle_down_links");
-var a = document.getElementById("arrow_toggle_up_links");
-if (y.style.display == 'flex') {
-  y.style.display = 'none';
-  z.style.display = 'none';
-  a.style.display = 'inline';
-}
-else {
-  y.style.display = 'flex';
-  z.style.display = 'inline';
-  a.style.display = 'none';
-}
 
-}
 function linksSubButtonUp() {
   var y = document.getElementById("links_sub_button_sidebar");
   y.style.display = 'none';
