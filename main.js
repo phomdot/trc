@@ -1,88 +1,99 @@
 // Add JS here
-document.addEventListener("DOMContentLoaded", function() {
-  var mySidebar = document.getElementById("mySidebar");
-  var contactSubButtonSidebar = document.getElementById("contact_sub_button_sidebar");
-  var arrowToggleDown = document.getElementById("arrow_toggle_down");
-  var arrowToggleUp = document.getElementById("arrow_toggle_up");
-  var linksSubButtonSidebar = document.getElementById("links_sub_button_sidebar");
-  var arrowToggleDownLinks = document.getElementById("arrow_toggle_down_links");
-  var arrowToggleUpLinks = document.getElementById("arrow_toggle_up_links");
+function sideBar() {
+  var x = document.getElementById("mySidebar");
+    x.style.display = 'flex';
+  
+}
 
-  function sideBar() {
-      mySidebar.style.display = 'flex';
+function menu_bar() {
+var x = document.getElementById("mySidebar");
+if (x.style.display == 'flex') {
+    x.style.display = 'none';
   }
-
-  function menu_bar() {
-      if (mySidebar.style.display === 'flex') {
-          mySidebar.style.display = 'none';
-      } else {
-          mySidebar.style.display = 'flex';
-      }
+  else {
+    x.style.display = 'flex';
   }
+}
 
-  function sideBarup() {
-      mySidebar.style.display = 'none';
-  }
+function sideBarup() {
+  var x = document.getElementById("mySidebar");
+    x.style.display = 'none';
+  
+}
 
-  function contactSubButton() {
-      contactSubButtonSidebar.style.display = 'flex';
-      arrowToggleDown.style.display = 'none';
-      arrowToggleUp.style.display = 'inline';
-  }
+function contactSubButton() {
+  var y = document.getElementById("contact_sub_button_sidebar");
+  y.style.display = 'flex';
+  var z = document.getElementById("arrow_toggle_down")
+  z.style.display = 'inline';
+  var a = document.getElementById("arrow_toggle_up")
+  a.style.display = 'none';
+  
+}
 
-  function contacts_bar() {
-      if (contactSubButtonSidebar.style.display === 'flex') {
-          contactSubButtonSidebar.style.display = 'none';
-          arrowToggleDown.style.display = 'inline';
-          arrowToggleUp.style.display = 'none';
-      } else {
-          contactSubButtonSidebar.style.display = 'flex';
-          arrowToggleDown.style.display = 'none';
-          arrowToggleUp.style.display = 'inline';
-      }
-  }
+function contacts_bar() {
+var y = document.getElementById("contact_sub_button_sidebar");
 
-  function contactSubButtonUp() {
-      contactSubButtonSidebar.style.display = 'none';
-      arrowToggleDown.style.display = 'inline';
-      arrowToggleUp.style.display = 'none';
-  }
+var z = document.getElementById("arrow_toggle_down");
+var a = document.getElementById("arrow_toggle_up")
 
-  function linksSubButton() {
-      linksSubButtonSidebar.style.display = 'flex';
-      arrowToggleDownLinks.style.display = 'none';
-      arrowToggleUpLinks.style.display = 'inline';
-  }
+if (y.style.display == 'flex') {
+  y.style.display = 'none';
+  z.style.display = 'none';
+  a.style.display = 'inline';
+}
+else {
 
-  function links_bar() {
-      if (linksSubButtonSidebar.style.display === 'flex') {
-          linksSubButtonSidebar.style.display = 'none';
-          arrowToggleDownLinks.style.display = 'inline';
-          arrowToggleUpLinks.style.display = 'none';
-      } else {
-          linksSubButtonSidebar.style.display = 'flex';
-          arrowToggleDownLinks.style.display = 'none';
-          arrowToggleUpLinks.style.display = 'inline';
-      }
-  }
+  y.style.display = 'flex';
+  z.style.display = 'inline';
+  a.style.display = 'none';
+}
+}
 
-  function linksSubButtonUp() {
-      linksSubButtonSidebar.style.display = 'none';
-      arrowToggleDownLinks.style.display = 'inline';
-      arrowToggleUpLinks.style.display = 'none';
-  }
+function contactSubButtonUp() {
+  var y = document.getElementById("contact_sub_button_sidebar");
+  y.style.display = 'none';
+  var z = document.getElementById("arrow_toggle_down")
+  z.style.display = 'none';
+  var a = document.getElementById("arrow_toggle_up")
+  a.style.display = 'inline';
+}
 
-  window.menu_bar = menu_bar;
-  window.sideBar = sideBar;
-  window.sideBarup = sideBarup;
-  window.contactSubButton = contactSubButton;
-  window.contacts_bar = contacts_bar;
-  window.contactSubButtonUp = contactSubButtonUp;
-  window.linksSubButton = linksSubButton;
-  window.links_bar = links_bar;
-  window.linksSubButtonUp = linksSubButtonUp;
-});
+function linksSubButton() {
+  var y = document.getElementById("links_sub_button_sidebar");
+  y.style.display = 'flex';
+  var z = document.getElementById("arrow_toggle_down_links");
+  z.style.display = 'inline';
+  var a = document.getElementById("arrow_toggle_up_links");
+  a.style.display = 'none';
+  
+}
 
+function links_bar() {
+var y = document.getElementById("links_sub_button_sidebar");
+var z = document.getElementById("arrow_toggle_down_links");
+var a = document.getElementById("arrow_toggle_up_links");
+if (y.style.display == 'flex') {
+  y.style.display = 'none';
+  z.style.display = 'none';
+  a.style.display = 'inline';
+}
+else {
+  y.style.display = 'flex';
+  z.style.display = 'inline';
+  a.style.display = 'none';
+}
+
+}
+function linksSubButtonUp() {
+  var y = document.getElementById("links_sub_button_sidebar");
+  y.style.display = 'none';
+  var z = document.getElementById("arrow_toggle_down_links")
+  z.style.display = 'none';
+  var a = document.getElementById("arrow_toggle_up_links")
+  a.style.display = 'inline';
+  
+}
 
 
 var dot = [];
