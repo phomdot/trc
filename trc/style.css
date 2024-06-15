@@ -1,0 +1,981 @@
+/* Add styles here */
+* {
+    background-color:#003135;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0rem;
+
+}
+
+/* glossy starts */
+
+/* glossy ends */
+
+#nav_bar {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 0.2rem;
+    
+}
+
+#nav_bar a {
+    text-decoration: none;
+    background-color: inherit;
+    width: 100%;
+    color: rgb(102, 148, 148);
+    padding: 0.2rem;
+    margin-right: 0.1rem;
+    margin-left: 0.1rem;
+    margin-top: 0.05rem;
+    margin-bottom: 0.05rem;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#nav_bar a:hover {
+    background-color: rgb(12, 3, 31);
+    color: whitesmoke;
+    border-radius: 0.2rem;
+
+}
+#nav_bar a:visited {
+    color: goldenrod
+}
+
+#nav_bar > .active , #nav_bar a:active {
+    background-color: rgba(47, 79, 79, 0.386);
+    transition: none;
+    color: whitesmoke;
+    border-radius: 0.2rem;
+}
+
+.main_logo {
+    height: 25%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+
+}
+
+i {
+    display: flex;
+    width: 3rem;
+}
+
+#nav_bar > i > a:hover {
+    background-color: darkslategray;
+}
+nav {
+    position: relative;
+    z-index: 0;
+}
+#mySidebar {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: auto;
+    right: auto;
+    left: 0rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #4663689a;
+    background: linear-gradient(to right bottom, #64888062, #293f50);
+    border-radius: 0.2rem;
+}
+
+#mySidebar > button {
+    background-color: inherit;
+    color: black;
+    border-bottom: 0.1rem solid aliceblue;
+    border-top: 0.1rem solid black;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+#contact_sub_button_sidebar,
+#links_sub_button_sidebar {
+    display: none;
+    border: none;
+    justify-content: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    backdrop-filter: blur(2);
+}
+
+#contact_sub_button_sidebar a,
+#links_sub_button_sidebar a {
+    background: transparent;
+    color: black;
+    padding: 0.5rem;
+    
+}
+
+#contact_sub_button_sidebar a:hover,
+#links_sub_button_sidebar a:hover {
+    background-color: lightblue;
+}
+
+
+a:visited {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+a:link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+#arrow_toggle_up {
+    display:inline;
+
+}
+
+#arrow_toggle_down {
+    display:none;
+}
+#arrow_toggle_up_links {
+    display:inline;
+}
+
+#arrow_toggle_down_links {
+    display:none;
+}
+
+.fa-solid, .fa-regular {
+    background-color: transparent;
+}
+
+.menu_button {
+    background-color: #46636877;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    
+}
+.menu_button:hover  {
+    background-color: rgba(47, 79, 79, 0.762);
+}
+
+
+* {box-sizing:border-box}
+
+#slideshow_projected {
+    background-image: url(/images/img1.png);
+    background-size: cover;
+    
+  }
+
+  .main_div {
+    background: transparent;
+    
+  }
+
+  .main_div > a > img {
+    background: transparent;
+  }
+
+  .slideshow_container {
+    height: 25rem;
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+
+.slideshow_container > div > img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+ 
+}
+
+.prev_button, .next_button {
+    position:absolute;
+    animation: none;
+    background-color: rgba(0, 255, 255, 0.048);
+    border: none;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.prev_button:hover, .next_button:hover {
+    background-color: rgba(0, 255, 255, 0.199);
+}
+
+.prev_button {
+    top: 50%;
+}
+
+.next_button {
+    top: 50%;
+    right: 0%;
+
+}
+
+.slideshow {
+    height: inherit;
+    width: 100%;
+    object-fit: contain;
+    background-color: transparent;
+    position: relative;
+}
+
+
+.fade {
+    animation-name: slide;
+    animation-duration: 3s;
+
+}
+
+.fade2 {
+    animation-name: slide2;
+    animation-duration: 3s;
+}
+
+.fade3 {
+    animation-name: opacity;
+    animation-duration: 3s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    10% {
+        transform: translateX(-100%);
+    }
+    20% {
+        transform: translateX(0%);
+    }
+    30% {
+        transform: translateX(0%);
+    }
+
+}
+@keyframes slide2 {
+    0% {
+        transform: translateX(100%);
+    }
+    10% {
+        transform: translateX(100%);
+    }
+    20% {
+        transform: translateX(0%);
+    }
+    30% {
+        transform: translateX(0%);
+    }
+
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+#dots_div {
+    display: flex;
+    position: absolute;
+    bottom: 2%;
+    left: 25%;
+    right: 25%;
+    justify-content: center;
+    margin-top: 1rem;
+    background-color: transparent;
+}
+
+#dots_div > span {
+    background-color: transparent;
+}
+
+.text_slideshow {
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+    backdrop-filter: blur(10px);
+    background-color: transparent;
+    z-index: 0;
+    /**/
+    max-height: 2rem;
+    
+    overflow-y: scroll;
+    scrollbar-width: none;
+    mask-image: linear-gradient(to top, transparent, black);
+    -webkit-mask-image: linear-gradient(to top, transparent, black);
+}
+
+.text_slideshow:hover {
+    max-height: 15rem;
+    height: 15rem;
+    mask-image: none;
+}
+
+.text_slideshow > p {
+    background-color: transparent;
+}
+
+.motivation_main {
+    background-image: url(https://preview.redd.it/s15ghvj3cixb1.png?auto=webp&s=b8f528289ccf970c1ed6de45512104fb42074938);
+    background-attachment: fixed;
+    background-position: center;
+    height: 30rem;
+    background-repeat: no-repeat;
+    align-content: center;
+
+}
+
+.motivation_main > h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    font-family: cursive;
+}
+
+.buttons_top {
+    margin: 0rem;
+    padding: 0rem;
+    overflow-y: hidden;
+    padding-bottom: 0;
+    background-color: transparent;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.motivation_divs > a > h2 {
+    text-align: center;
+    
+}
+
+
+.motivation_divs {
+    border-radius: 0.5rem;
+    width: 33%;
+    background-image: linear-gradient(to right, #0fa4af53 , rgba(66, 107, 107, 0.07) ), url(/images/sky.jpg);
+    background-position: right;
+    transition: 0.5s all ease-in-out;
+    border-style: groove;
+    border-width: 0.005rem;
+    margin: 0px;
+    padding: 0;
+
+    
+}
+.motivation_divs > a > p, h2 {
+    background-color: transparent;
+}
+
+.motivation_divs > a > p {
+    text-align: justify;
+    margin: 1.5rem;
+}
+
+.motivation_divs:hover {
+    transform: scale(0.9);
+    
+}
+
+.main_body_div {
+    overflow-y: hidden;
+    background-color: transparent;
+    
+    
+}
+
+.main_body_div > div > p {
+    background: transparent;
+    margin-top: 1rem;
+    text-align: justify;
+    
+}
+.left, .right {
+    background: transparent;
+    float: inline-start;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+/* right div */
+.right {
+    width: 50%;
+    /* background-color: red; */
+ 
+}
+
+/* left div */
+.left {
+    width: 50%;
+    /* background-color: blue; */
+}
+
+.left > h2 {
+    text-align: center;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.center, .center > p {
+    background-color: transparent;
+    width: 100%;
+    
+}
+
+.center {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.center > p {
+    text-align: justify;
+}
+
+.center > h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+    
+}
+
+.main_body {
+    /*background-image: linear-gradient(to right, #0fa4af53 , rgba(26, 63, 63, 0.07) ); */
+    border-bottom-left-radius: 1.5rem;
+    overflow-y: hidden;
+    height: 100%;
+    height: max-content;
+    background-image: url(/images/bck2.jpg);
+    
+    
+}
+
+hr {
+    margin-top: 5rem;
+    margin-right: 25%;
+    margin-left: 25%;
+    border-width: 0.1rem;
+}
+
+/* all internal images */
+
+#int_img_div {
+    background-color: transparent;
+    height: 25rem;
+    margin-top: 2rem;
+}
+
+#int_img_div > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.stories {
+    width: 19.5rem;
+    overflow: hidden;
+    height: 24rem;
+    display: inline-block;
+    margin: 0.3rem;
+    margin-right: 0rem;
+    border-width: 0.2rem;
+    border-style: groove;
+    box-shadow: -0.5rem 0.5rem #003135;
+    transition: 0.5s all ease-in;
+    position: relative;
+    
+}
+
+.stories:hover {
+    transform: scale(1.05);
+    box-shadow:none;
+}
+.stories_container {
+    margin-top: 1rem;
+    background-color: transparent;
+    padding-top: 0.5rem;
+    padding-left: 6%;
+    padding-right: 1rem;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.text_shadow {
+    width: 100%;
+    height: 4.3rem;
+    position: absolute;
+    backdrop-filter: blur(0.1rem);
+    
+    
+}
+
+
+.news_img {
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    width: 2.3rem;
+    border-radius: 1rem;
+    
+}
+
+.text_shadow > img {
+    position: absolute;
+}
+
+.news_text {
+    position: absolute;
+    left: 4rem;
+    top: 0.3rem;
+    text-align: left;
+    color: #786666;
+    
+}
+
+.txt {
+    top: 1.5rem;
+    font-size: 0.6rem;
+    
+}
+
+.inside {
+    background-image: url(/images/background.jpg);
+    
+}
+
+.glossy {
+    background-color: rgba(0, 0, 0, 0.115);
+    backdrop-filter: blur(6);
+}
+
+
+.top {
+    background-color:rgba(0, 255, 255, 0.091);
+    overflow: hidden;
+}
+
+
+.bottom {
+    bottom: 0;
+    padding: 0.2rem;
+    height: 4.25rem;
+    mask-image: linear-gradient(to top, transparent, black);
+    transition: 0.5s all ease-in-out;
+
+}
+
+.bottom:hover {
+    height: 13rem;
+    background-color:rgba(0, 255, 255, 0.205);
+    mask-image: none;
+    
+}
+
+.bottom_text_scrollable {
+    overflow-y: scroll;
+    scrollbar-color: #003135bd #05737db7;
+    background-color: transparent;
+}
+
+.bottom_text_scrollable:hover {
+    height: 8rem;
+    
+}
+
+.bottom > h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
+.bottom > p {
+    text-align: justify;
+}
+
+
+.top > img, h4, p {
+    background-color: transparent;
+    
+}
+
+.stories:hover .class_links{
+    transform: scale(1.3);
+}
+
+
+#footer {
+    height: 40rem;
+    background-color: #003135b7;
+    position: relative;
+    padding-top: 2rem;
+    
+}
+
+.footer_div {
+    height: 100%;
+    width: 33.3%;
+    position: absolute;
+    padding-left: 0.5rem;
+    padding-right: 2%;
+}
+
+.footer_left {
+    left: 0;
+     background-color: transparent; /*rgba(255, 0, 0, 0.104); */
+}
+
+.footer_right {
+    
+    right: 0;
+    background-color: transparent; /* rgba(255, 255, 0, 0.104); */
+}
+
+.footer_center {
+    left: 33.35%;
+     background-color: transparent; /*rgba(238, 130, 238, 0.104); */
+     
+}
+
+.footer_header {
+    font-size: 80%;
+    position: absolute;
+    top: 0.85rem;
+    backdrop-filter: blur(1000);
+    z-index: 1;
+    background-color: rgb(35,71,66);
+    color:antiquewhite;
+}
+
+.footer_rule {
+    position: absolute;
+    margin: 0;
+    top: 1.2rem;
+    width: 90%;
+    z-index: 0;
+}
+
+.footer_body {
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 2.2rem;
+    background-color: transparent;
+    
+}
+
+.footer_body_left {
+    top: 1.7rem;
+    
+}
+
+.footer_div div {
+    float: inline-start;
+}
+
+
+.footer_body ul {
+    list-style-type: none;
+  }
+
+ul a {
+    background-color: transparent;
+}
+  ul li, ul {
+    background-color: transparent;
+    margin-bottom: 0.3rem;
+    
+  }
+
+
+
+
+
+
+.bottom_logo_div {
+    position: absolute;
+    left: 0rem;
+    background-image: url(/images/main_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 20%;
+    background-color: transparent;
+}
+
+
+.bottom_logo_text {
+    position: absolute;
+    right: 1.2rem;
+    text-align: left;
+    height: 100%;
+    width: 79%;
+    display: flex;
+    align-items: center;
+    font-size: 150%;
+    font-weight: bolder;
+    font-style: oblique;
+    background-color: transparent;
+    
+}
+
+.bottom_logo_text a, a:link, a:visited, a:active {
+    color: whitesmoke;
+    background-color: transparent;
+}
+
+.bottom_logo_text h1 {
+    background-color: transparent;
+    
+}
+
+.bottom_reserved {
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    text-align: left;
+    background-color: transparent;
+}
+
+
+
+
+.bottom_right_texts {
+    margin-top: 0.5rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    border-left-style: solid;
+    border-left-color: whitesmoke;
+    padding-left: 2rem;
+}
+
+.bottom_right_texts a {
+    background-color: transparent;
+}
+
+#associations img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid lightsteelblue;
+    background-color: transparent;
+    
+}
+#social_medias img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid lightseagreen;
+    background-color: transparent;
+    
+}
+
+.bottom_footer_container {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    background-color: transparent;
+}
+
+.footer_bottom_right {
+    position: absolute;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    margin-top: 5%;
+    background-color: transparent;
+    
+    
+
+  }
+
+  .footer_bottom_left {
+    height: 100%;
+    width: 70%;
+    background-color: transparent;
+    
+  }
+
+
+.footer_hr {
+    position: absolute; 
+    width:50%; 
+    top: 14.9rem;
+}
+
+.small_screen_img {
+    display: none;
+}
+
+  @media screen and (max-width: 759px) {
+    .motivation_divs, .left, .right {
+        width: 100%;
+    }
+
+    .buttons_top {
+        display: block;
+    }
+    .stories {
+        width: 100%;
+    }
+
+    .footer_div, .footer_bottom_right {
+        width: 100%;
+    }
+
+    .bottom_right_texts {
+        border-left-style: none;
+    }
+
+    .footer_bottom_left {
+        display: none;
+    }
+
+    .large_screen_img {
+        display: none;
+    }
+
+    .small_screen_img {
+        display: block;
+    }
+
+    .text_slideshow {
+        height: 100%;
+        max-height: 15rem;
+        backdrop-filter: blur(0.5);
+        mask: none;
+    }
+
+
+    .footer_left, .footer_center, .footer_right {
+        position:relative;
+        width: 100%;
+        left: 0;
+        display: inline-block;
+        height: max-content;
+        margin-left: 0;
+    }
+
+    #footer {
+        height: 50rem;
+
+    }
+
+    .footer_hr {
+        top: 20.5rem;
+    }
+
+
+    .nav_bar a, .menu_button {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.main_img   {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.evidence_container {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.evidence {
+    background-color: rgb(49, 42, 95);
+    padding: 1rem;
+    width: 70%;
+    overflow-x: hidden;
+    overflow-y: visible;
+    height: auto;
+    box-shadow: -4px 3px rgb(95, 94, 94);
+    object-fit: cover;
+    
+    
+    
+}
+.evidence h4, h5 {
+    color: whitesmoke;
+    background-color: transparent;
+    
+}
+
+.evidence > ul >li > ul >li {
+    color: darkgoldenrod;
+    text-shadow: -1.2px 1.1px rgb(75, 57, 10);
+    
+}
+.evidence > ul >li > ul >li > figure > img {
+    width: 100%;
+    background-color: transparent;
+}
+
+.evidence > ul >li > ul >li > figure {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: transparent;
+}
+
+figcaption {
+    font-size: 0.8rem;
+    background-color: transparent;
+}
+
+figure {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: transparent;
+}
+
+figure > img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+/* Initial state - elements are hidden */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px); /* Slightly shifted down */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Final state - elements are visible */
+.visible {
+    opacity: 1;
+    transform: translateY(0); /* Original position */
+}
