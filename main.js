@@ -2,17 +2,36 @@
 var x = document.getElementById("menu_button");
 var y = document.getElementById("contact_button");
 var z = document.getElementById("links_button");
+var u = document.getElementsByClassName('')
 
 x.addEventListener("click", menu_bar);
+x.addEventListener("touchstart", menu_bar);
 
 y.addEventListener("click", contacts_bar);
+y.addEventListener("touchstart", contacts_bar);
 
 z.addEventListener("click", links_bar);
+z.addEventListener("touchstart", links_bar);
 
 window.addEventListener("click", sideBarup);
 window.addEventListener("click", contactSubButtonUp);
 window.addEventListener("click", linksSubButtonUp);
 
+function upArrowShow(n) {
+  var x = document.getElementsByClassName('fa-sort-up')
+  var y = document.getElementsByClassName('fa-sort-down')
+  for (var i = 0; i < x.length; i++) {
+    x[n].style.display = 'none';
+    y[n].style.display = 'inline';
+}
+}
+
+function downArrowShow(n) {
+  var x = document.getElementsByClassName('fa-sort-up')
+  var y = document.getElementsByClassName('fa-sort-down')
+  x[n].style.display = 'inline';
+  y[n].style.display = 'none';
+}
 
 function menu_bar() {
   var x = document.getElementById("mySidebar");
