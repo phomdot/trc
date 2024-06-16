@@ -7,7 +7,18 @@
   <title>The Royal Chronicles</title>
   <link href='/style.css' rel='stylesheet'>
   <link rel="icon" href="/images/main_logo.ico">
-  
+  <style>
+    /* Add this CSS for better responsiveness */
+    .menu_button {
+        position: relative;
+        z-index: 10; /* Ensure the button is on top */
+    }
+    #mySidebar {
+        display: none; /* Start with the sidebar hidden */
+        position: fixed;
+        z-index: 9; /* Make sure the sidebar is below the button */
+    }
+</style>
 </head>
 <body>
   
@@ -19,19 +30,20 @@
         <a href="/" class="active">Home</a>
         <a href="construction.html" target="_blank">Activities</a>
         <a href="construction.html" target="_blank">About</a>
-        <button class="menu_button" onclick="menu_bar()"  onmouseover="sideBar()" onmouseleave="sideBarup()"><i class="fa-solid fa-bars"></i></button>
+        
+        <button id="menu_button" onmouseover="sideBar()" onmouseleave="sideBarup()" class="menu_button" ><i class="fa-solid fa-bars"></i></button>
       </nav>
     </div>
 
     <aside id="mySidebar" onmouseover="sideBar()" onmouseleave="sideBarup()">
-      <button onclick="contacts_bar()" onmouseover="contactSubButton()" onmouseleave="contactSubButtonUp()">Contact<i id="arrow_toggle_down" class="fa-solid fa-caret-down"></i> <i id="arrow_toggle_up" class="fa-solid fa-caret-up"></i></button>
+      <button id="contact_button" onmouseover="contactSubButton()" onmouseleave="contactSubButtonUp()">Contact<i id="arrow_toggle_down" class="fa-solid fa-caret-down"></i> <i id="arrow_toggle_up" class="fa-solid fa-caret-up"></i></button>
       <div onmouseover="contactSubButton()" onmouseleave="contactSubButtonUp()" id="contact_sub_button_sidebar">
         <a href="construction.html" target="_blank" rel="noopener noreferrer">Email</a>
         <hr style="color: black; margin: 0; padding: 0;">
         <a href="construction.html" target="_blank" rel="noopener noreferrer">Instagram</a>
       </div>
 
-      <button onclick="links_bar()" onmouseover="linksSubButton()" onmouseleave="linksSubButtonUp()">Links<i id="arrow_toggle_down_links" class="fa-solid fa-caret-down"></i> <i id="arrow_toggle_up_links" class="fa-solid fa-caret-up"></i></button>
+      <button id="links_button" onmouseover="linksSubButton()" onmouseleave="linksSubButtonUp()">Links<i id="arrow_toggle_down_links" class="fa-solid fa-caret-down"></i> <i id="arrow_toggle_up_links" class="fa-solid fa-caret-up"></i></button>
       <div onmouseover="linksSubButton()" onmouseleave="linksSubButtonUp()" id="links_sub_button_sidebar">
         <a href="construction.html" target="_blank" rel="noopener noreferrer">Medium</a>
         <hr style="color: black; margin: 0; padding: 0;">
@@ -64,10 +76,11 @@
   </div>
 
   <div class="slideshow">
-    <h2 style="text-align: center; background-color: transparent">Today in History</h2>
-    <img src="https://cdn.britannica.com/28/144228-050-FB55C473/engraving-King-John-Magna-Carta-Runnymede-England-June-15-1215.jpg?w=725&h=408&c=crop" alt="">
+    <h2 style="text-align: center; background-color: transparent">Today in History (1963)</h2>
+    <img src="https://cdn.britannica.com/43/185243-050-210E89F7/Valentina-Tereshkova.jpg?w=725&h=408&c=crop" alt="">
     <div onmouseover="slideshow_text_mouseover()" onmouseout ="slideshow_text_mouseout()" class="text_slideshow">
-      Magna Carta—a charter of English liberties that occupies a unique place in the popular imagination as a symbol and a battle cry against oppression—was sealed this day, under threat of civil war, by King John in 1215.
+      First woman in space <br>
+On this day in 1963, Soviet cosmonaut Valentina V. Tereshkova became the first woman to travel in space, having been launched into orbit aboard the spacecraft Vostok 6, which completed 48 orbits in 71 hours.
     </div>
     
   </div>
@@ -448,8 +461,8 @@
 
     <img class="main_img" src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/78ca/live/0927c370-2a17-11ef-a1fa-1b739acc6f54.jpg.webp" alt="">
 
-    <div class="bottom">
-      <h4 ><i class="fa-solid fa-sort-up"></i> <br> G7 agrees $50bn loan for Ukraine from Russian assets</h4>
+    <div onmouseover="upArrowShow(0)" onmouseleave="downArrowShow(0)" class="bottom">
+      <h4 ><i class="fa-solid fa-sort-up"></i> <i class="fa-solid fa-sort-down"></i>  <br> G7 agrees $50bn loan for Ukraine from Russian assets</h4>
       <div style="background: transparent">
         <div class="bottom_text_scrollable">
           <p>The G7 has agreed to use frozen Russian assets to raise $50bn (£39bn) for Ukraine to help it fight invading Russian forces.</p>
@@ -480,8 +493,8 @@
   
       <img class="main_img" src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2154622899.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp" alt="">
   
-      <div class=" bottom">
-        <h4 ><i class="fa-solid fa-sort-up"></i> <br> Hamas official says `no one has any idea` how many Israeli hostages are still alive</h4>
+      <div onmouseover="upArrowShow(1)" onmouseleave="downArrowShow(1)" class="bottom">
+        <h4 ><i class="fa-solid fa-sort-up"></i> <i class="fa-solid fa-sort-down"></i> <br> Hamas official says `no one has any idea` how many Israeli hostages are still alive</h4>
         <div style="height: 100%; background: transparent;">
           <div class="bottom_text_scrollable">
         <p>
@@ -510,8 +523,8 @@
   
       <img class="main_img"  src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2024/02/720/405/Kamala-Harris.jpg?tl=1&ve" alt="">
   
-      <div class="bottom">
-        <h4 ><i class="fa-solid fa-sort-up"></i> <br> Secret Service agents to testify before Congress after Kamala Harris` detail struck superior</h4>
+      <div onmouseover="upArrowShow(2)" onmouseleave="downArrowShow(2)" class="bottom">
+        <h4 ><i class="fa-solid fa-sort-up"></i> <i class="fa-solid fa-sort-down"></i> <br> Secret Service agents to testify before Congress after Kamala Harris` detail struck superior</h4>
         <div style="background: transparent;">
           <div class="bottom_text_scrollable">
         <p>
@@ -540,8 +553,8 @@
   
       <img class="main_img"  src="https://media-cldnry.s-nbcnews.com/image/upload/t_focal-1000x500,f_auto,q_auto:best/rockcms/2024-03/240321-jim-jordan-ac-703p-eeea82.jpg" alt="">
   
-      <div class="bottom">
-        <h4 ><i class="fa-solid fa-sort-up"></i> <br>The 400 Trump trial evidence slides that should shut up Jim Jordan</h4>
+      <div onmouseover="upArrowShow(3)" onmouseleave="downArrowShow(3)" class="bottom">
+        <h4 ><i class="fa-solid fa-sort-up"></i> <i class="fa-solid fa-sort-down"></i> <br>The 400 Trump trial evidence slides that should shut up Jim Jordan</h4>
         <div style="background: transparent;">
           <div class="bottom_text_scrollable">
         <p>
@@ -568,8 +581,8 @@
   
       <img class="main_img"  src="https://www.who.int/images/default-source/departments/ntd-library/rabies/cambodia-2023/rabies-elimination-in-cambodia-5.tmb-479v.png?Culture=en&sfvrsn=b8693fdf_1" alt="">
   
-      <div class="bottom">
-        <h4 ><i class="fa-solid fa-sort-up"></i> <br>Gavi to boost access to life-saving human rabies vaccines in over 50 countries: Gavi, WHO and UAR</h4>
+      <div onmouseover="upArrowShow(4)" onmouseleave="downArrowShow(4)" class="bottom">
+        <h4 ><i class="fa-solid fa-sort-up"></i> <i class="fa-solid fa-sort-down"></i> <br>Gavi to boost access to life-saving human rabies vaccines in over 50 countries: Gavi, WHO and UAR</h4>
         <div style="background: transparent;">
           <div class="bottom_text_scrollable">
         <p>
@@ -596,8 +609,8 @@
   
       <img class="main_img"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Internet_addiction.jpg/1200px-Internet_addiction.jpg?20130831012523" alt="">
   
-      <div class="bottom">
-        <h4 ><i class="fa-solid fa-sort-up"></i> <br>Internet addiction affects the behavior and development of adolescents</h4>
+      <div onmouseover="upArrowShow(5)" onmouseleave="downArrowShow(5)" class="bottom">
+        <h4 ><i class="fa-solid fa-sort-up"></i> <i class="fa-solid fa-sort-down"></i> <br>Internet addiction affects the behavior and development of adolescents</h4>
         <div style="background: transparent;">
           <div class="bottom_text_scrollable">
         <p>
