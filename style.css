@@ -581,8 +581,7 @@ hr {
     bottom: 0;
     height: 4.3rem;
     mask-image: linear-gradient(to top, transparent, black);
-
-
+    transition: 0.5s all ease-in-out;
 }
 
 .bottom:hover {
@@ -835,6 +834,10 @@ ul a {
         width: 100%;
     }
 
+    .bottom {
+        height: 15rem;
+    }
+
     .bottom_footer_container, .footer_div {
         position: relative;
         display: block;
@@ -990,3 +993,10 @@ figure > img {
     transform: translateY(0); /* Original position */
 }
 
+.fa-sort-up {
+    display: inline;
+}
+
+.fa-sort-down {
+    display: none;
+}
